@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  # 数据源/数据库配置
+  datasource:
+    url: jdbc://192.168.0.106:3306/sprinngbootmerge
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.springboot.merge.*.dto # 与mapper.xml对应的实体类的位置
+  mapper-locations: classpath*:/mapper/**/*.xml   # mapper.xml文件的位置，模块名/mapper/*.xml
+
