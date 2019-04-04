@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since JDK 1.8
  */
 @SpringBootApplication
-@MapperScan("com.springboot.merge.*.mapper")   //扫描Mapper接口,必须具体到mapper包，否则扫描到其他包的bean容易注入出错
+@MapperScan("com.springboot.merge.*.mapper")   //扫描Mapper接口,mapper接口添加@Mapper注解同此行的效果，选一即可
 public class MergeApplication {
 
     public static void main(String[] args) {
