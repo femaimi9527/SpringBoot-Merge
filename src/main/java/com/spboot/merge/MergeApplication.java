@@ -1,6 +1,5 @@
-package com.springboot.merge;
+package com.spboot.merge;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since JDK 1.8
  */
 @SpringBootApplication
-@MapperScan("com.springboot.merge.*.mapper")   //扫描Mapper接口,mapper接口添加@Mapper注解同此行的效果，选一即可
+//@MapperScan("com.springboot.merge.*.mapper")   //扫描Mapper接口,mapper接口添加@Mapper注解同此行的效果，选一即可
 public class MergeApplication {
 
     public static void main(String[] args) {
