@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+context:
+  initializer:
+    classes: com.sboot.merge.core.runner.ApplicationContextInit
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/activiorder?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+# 配置xml位置。
+#   若pom引入mybatis-plus，则需要配置mybatis.mapper-locations
+#   若POM引入mybatis-plus-boot-starter，则需要配置mybatis-plus.mapper-locations
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+
+# logback配置文件
+logging:
+  config: classpath:logback-spring.xml
